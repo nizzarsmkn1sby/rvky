@@ -1,0 +1,74 @@
+========================================================================
+🛡️ RVKY POS - ROYAL GOLDEN OBSIDIAN EDITION
+========================================================================
+
+RVKY POS adalah sistem Point of Sale (POS) premium yang dirancang untuk 
+kecepatan, keamanan, dan estetika mewah. Menggunakan tema "Golden Obsidian" 
+dengan layout Sidebar modern dan efek Glassmorphism.
+
+------------------------------------------------------------------------
+✨ FITUR UTAMA
+------------------------------------------------------------------------
+
+1. COMMAND CENTER (DASHBOARD)
+   - Visualisasi data "Golden Bento" yang intuitif.
+   - Monitoring revenue real-time dengan grafik efisiensi.
+   - Indikator "Stock Intel" untuk memantau kesehatan inventaris.
+   - Log transaksi terbaru dengan verifikasi otomatis.
+
+2. CATALOG PROTOCOL (CASHIER TERMINAL)
+   - Pencarian produk super cepat.
+   - Filter kategori "Sektor" yang responsif.
+   - Antarmuka keranjang belanja yang sticky dan transparan.
+   - Sistem pembayaran instan dengan kalkulasi kembalian otomatis.
+   - Cetak struk profesional sekali klik.
+
+3. ASSET MANAGEMENT (INVENTORY)
+   - Manajemen stok produk dengan sistem peringatan dini (Warning/Depleted).
+   - Pengaturan kategori produk yang fleksibel.
+   - Upload gambar produk untuk katalog visual yang lebih baik.
+
+4. TRANSACTION ARCHIVES (REPORTS)
+   - Riwayat lengkap semua aktivitas protokol penjualan.
+   - Detail transaksi per item.
+   - Laporan pendapatan harian dan bulanan.
+
+------------------------------------------------------------------------
+🎨 FILOSOFI DESAIN: GOLDEN OBSIDIAN
+------------------------------------------------------------------------
+
+- Warna Utama: Obsidian 950 (Latar belakang gelap pekat yang elegan).
+- Aksen: Gold 500/600 (Warna emas mewah untuk elemen penting).
+- Tipografi: Plus Jakarta Sans & Outfit (Modern & Professional).
+- Navigasi: Floating Sidebar (Efisien di desktop, responsif di mobile).
+- Efek: Backdrop Blur 2xl & Golden Glow (Visual premium kelas atas).
+
+------------------------------------------------------------------------
+⚙️ PANDUAN PENGGUNAAN
+------------------------------------------------------------------------
+
+1. Persiapan Awal
+   - Proyek ini berlokasi di: C:\laragon\www\rvky\
+   - Pastikan database 'db_rvky' sudah terkonfigurasi di file .env.
+   - Jalankan `php artisan migrate:fresh --seed` untuk reset data awal.
+   - Jalankan `npm run dev` untuk merender aset visual premium.
+
+2. Melakukan Penjualan
+   - Masuk ke menu 'Cashier'.
+   - Pilih produk dari katalog atau gunakan fitur pencarian.
+   - Sesuaikan kuantitas di panel kanan.
+   - Masukkan nominal pembayaran.
+   - Klik 'Execute Protocol' untuk menyelesaikan transaksi.
+
+------------------------------------------------------------------------
+🔒 KEAMANAN & PEMELIHARAAN
+------------------------------------------------------------------------
+
+- Sistem menggunakan Laravel Security Shield.
+- Pastikan folder `storage/app/public` sudah di-link (`php artisan storage:link`).
+- Backup database secara berkala untuk menjaga integritas data.
+
+------------------------------------------------------------------------
+RVKY POS - Premium, Powerful, Professional.
+© 2026 Golden Obsidian Systems.
+========================================================================

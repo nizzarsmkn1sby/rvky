@@ -1,0 +1,60 @@
+========================================================================
+             RIVE INTELLIGENCE TERMINAL - OFFICIAL MANUAL
+========================================================================
+
+A. DAFTAR FITUR UTAMA
+------------------------------------------------------------------------
+1. Dashboard Intelligence: Grafik pendapatan & status sistem real-time.
+2. Terminal Kasir: Transaksi cepat dengan fitur pencarian & stok otomatis.
+3. Manajemen Stok: Tambah produk, kategori, & sistem replenish (restock).
+4. Riwayat Transaksi: Arsip lengkap dengan cetak struk otomatis.
+5. Role Kasir & Owner: Pembatasan akses fitur sesuai tanggung jawab.
+6. Tema Midnight Aurora: Estetika ultra-modern dengan efek glassmorphism.
+
+B. CARA MENJALANKAN APLIKASI
+------------------------------------------------------------------------
+1. Pastikan Laragon/XAMPP sudah menyala (Apache & MySQL).
+2. Buka terminal di folder project ini (c:\laragon\www\rive).
+3. Jalankan perintah instalasi (hanya jika pertama kali):
+   > composer install
+   > npm install
+4. Setup Database:
+   - Buat database baru bernama 'rive_db' di phpMyAdmin.
+   - Jalankan migrasi: php artisan migrate:fresh --seed
+5. Setup Media:
+   - Jalankan: php artisan storage:link
+6. Menjalankan Server:
+   - Jalankan: npm run dev
+   - Buka terminal baru, jalankan: php artisan serve
+7. Akses aplikasi di browser: http://127.0.0.1:8000
+
+C. AKUN LOGIN DEFAULT
+------------------------------------------------------------------------
+- ROLE OWNER: owner@RIVE.com / password123
+- ROLE STAFF: staff@RIVE.com / password123
+
+D. PANDUAN MODIFIKASI (CUSTOMIZATION)
+------------------------------------------------------------------------
+1. Ganti Warna & Background:
+   Edit file: resources/views/layouts/app.blade.php
+   Cari bagian "Aurora Background Glows" untuk ganti warna cahaya indigo.
+
+2. Ganti Nama Aplikasi / Logo:
+   Edit file: resources/views/layouts/navigation.blade.php
+   Cari teks "RIVE" dan ganti sesuai brand kamu.
+
+3. Edit Logika Kasir (Hitung Pajak/Diskon):
+   Edit file: resources/views/pos/index.blade.php
+   Cari fungsi JavaScript "posSystem()" di bagian bawah file.
+
+4. Edit Tampilan Halaman Depan (Landing Page):
+   Edit file: resources/views/welcome.blade.php
+
+E. ALUR KERJA SISTEM (WORKFLOW)
+------------------------------------------------------------------------
+LOG IN -> INPUT STOK (Menu Stock) -> TRANSAKSI (Menu Terminal) -> 
+PEMBAYARAN -> CETAK STRUK -> LIHAT LAPORAN (Menu Archive).
+
+------------------------------------------------------------------------
+RIVE INTELLIGENCE GROUP • 2026
+========================================================================
